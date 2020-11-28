@@ -1,15 +1,24 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Network.hpp>
+#include "Game.h"
 
 int main() {
 
-	std::cout << "Hello" << std::endl;
+	std::srand(static_cast<unsigned>(time(NULL)));
+	//Init Game 
+	Game game;
 
-	system("pause");
+	// Game Loop
+	while (game.isrunning() && !game.getEndGame())
+	{
+
+
+		// Update
+		game.update();
+
+		// Render 
+		game.render();
+
+
+	}
 
 	return 0;
 }

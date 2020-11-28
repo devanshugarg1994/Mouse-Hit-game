@@ -359,7 +359,7 @@ private:
     #endif
 };
 
-} // namespace sf
+} // namespace sf2 
 
 
 #endif // SFML_FONT_HPP
