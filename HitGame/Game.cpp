@@ -225,7 +225,6 @@ void Game::spwanEnemy()
 		this->enemy.setFillColor(sf::Color::Blue);
 		this->enemy.setSize(sf::Vector2f(70.f, 70.f));
 		break;
-
 	case 2:
 		this->enemy.setFillColor(sf::Color::Cyan);
 		this->enemy.setSize(sf::Vector2f(80.f, 80.f));
@@ -238,8 +237,6 @@ void Game::spwanEnemy()
 		this->enemy.setFillColor(sf::Color::Green);
 		this->enemy.setSize(sf::Vector2f(100.f, 100.f));
 		break;
-
-
 	default:
 		this->enemy.setFillColor(sf::Color::Green);
 		this->enemy.setSize(sf::Vector2f(100.f, 100.f));
